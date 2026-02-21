@@ -1,50 +1,82 @@
 [
   {
     "id": "A-1001",
-    "timestamp": "2026-02-20T08:10:00Z",
+    "timestamp": "2026-02-21T03:00:00Z",
     "service": "core-db",
     "severity": "critical",
     "source": "prometheus",
-    "message": "Connection refused on primary DB"
+    "message": "Connection refused on primary DB",
+    "acknowledged": false,
+    "owner": "dba-oncall"
   },
   {
     "id": "A-1002",
-    "timestamp": "2026-02-20T08:11:00Z",
+    "timestamp": "2026-02-21T03:07:00Z",
     "service": "vpn-gateway",
     "severity": "high",
     "source": "zabbix",
-    "message": "Packet loss above 12 percent"
+    "message": "Packet loss above 12 percent",
+    "acknowledged": true,
+    "owner": "netops"
   },
   {
     "id": "A-1003",
-    "timestamp": "2026-02-20T08:13:00Z",
+    "timestamp": "2026-02-21T03:15:00Z",
     "service": "mail-relay",
     "severity": "medium",
     "source": "grafana",
-    "message": "Queue delay beyond warning threshold"
+    "message": "Queue delay beyond warning threshold",
+    "acknowledged": true,
+    "owner": "messaging"
   },
   {
     "id": "A-1004",
-    "timestamp": "2026-02-20T08:15:00Z",
+    "timestamp": "2026-02-21T03:20:00Z",
     "service": "api-edge",
     "severity": "high",
     "source": "prometheus",
-    "message": "Error rate reached 7 percent"
+    "message": "Error rate reached 7 percent",
+    "acknowledged": false,
+    "owner": "platform"
   },
   {
     "id": "A-1005",
-    "timestamp": "2026-02-20T08:16:00Z",
+    "timestamp": "2026-02-21T03:21:00Z",
     "service": "backup-agent",
     "severity": "low",
     "source": "cron",
-    "message": "Nightly backup duration increased"
+    "message": "Nightly backup duration increased",
+    "acknowledged": true,
+    "owner": "storage"
   },
   {
     "id": "A-1006",
-    "timestamp": "2026-02-20T08:18:00Z",
+    "timestamp": "2026-02-21T03:25:00Z",
     "service": "billing-worker",
     "severity": "medium",
     "source": "grafana",
-    "message": "CPU sustained above 75 percent"
+    "message": "CPU sustained above 75 percent",
+    "acknowledged": false,
+    "owner": "payments"
+  },
+  {
+    "id": "A-1007",
+    "timestamp": "2026-02-21T03:26:00Z",
+    "service": "core-db",
+    "severity": "high",
+    "source": "prometheus",
+    "message": "Replica lag above 45s",
+    "acknowledged": false,
+    "owner": "dba-oncall"
+  },
+  {
+    "id": "A-1008",
+    "timestamp": "2026-02-21T03:31:00Z",
+    "service": "api-edge",
+    "severity": "critical",
+    "source": "synthetics",
+    "message": "Global healthcheck failure",
+    "acknowledged": false,
+    "owner": "platform"
   }
 ]
