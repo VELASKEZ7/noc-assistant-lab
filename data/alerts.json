@@ -1,0 +1,50 @@
+[
+  {
+    "id": "A-1001",
+    "timestamp": "2026-02-20T08:10:00Z",
+    "service": "core-db",
+    "severity": "critical",
+    "source": "prometheus",
+    "message": "Connection refused on primary DB"
+  },
+  {
+    "id": "A-1002",
+    "timestamp": "2026-02-20T08:11:00Z",
+    "service": "vpn-gateway",
+    "severity": "high",
+    "source": "zabbix",
+    "message": "Packet loss above 12 percent"
+  },
+  {
+    "id": "A-1003",
+    "timestamp": "2026-02-20T08:13:00Z",
+    "service": "mail-relay",
+    "severity": "medium",
+    "source": "grafana",
+    "message": "Queue delay beyond warning threshold"
+  },
+  {
+    "id": "A-1004",
+    "timestamp": "2026-02-20T08:15:00Z",
+    "service": "api-edge",
+    "severity": "high",
+    "source": "prometheus",
+    "message": "Error rate reached 7 percent"
+  },
+  {
+    "id": "A-1005",
+    "timestamp": "2026-02-20T08:16:00Z",
+    "service": "backup-agent",
+    "severity": "low",
+    "source": "cron",
+    "message": "Nightly backup duration increased"
+  },
+  {
+    "id": "A-1006",
+    "timestamp": "2026-02-20T08:18:00Z",
+    "service": "billing-worker",
+    "severity": "medium",
+    "source": "grafana",
+    "message": "CPU sustained above 75 percent"
+  }
+]
